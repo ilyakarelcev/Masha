@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днем Рождения, Маша!</title>
+    <meta name="description" content="Оригинальное поздравление для самой лучшей Маши">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="canvas-container"></div>
+
+    <main class="container">
+        <section class="hero">
+            <div class="photo-frame clickable-hint" onclick="togglePhoto()">
+                <img src="photo_2025-12-05_14-33-50.jpg" alt="Маша" id="masha-photo">
+            </div>
+            <h1>С Днём Рождения, Маша!</h1>
+            <div class="message reveal">
+                <p>Маша, с днем рождения! Ты очень интересный, по-настоящему оригинальный и позитивный человек. Пусть
+                    жизнь отвечает тебе тем же. Будь счастлива и всегда оставайся такой же красивой!</p>
+                <button class="wish-btn" onclick="showSecretWish()">Получить пожелание ✨</button>
+            </div>
+        </section>
+
+        <section class="achievements">
+            <h2 class="section-title reveal">Подарки</h2>
+            <div class="certificates reveal">
+                <div class="cert-card" onclick="openModal('images/1_page_1.png')">
+                    <img src="images/1_page_1.png" alt="Сертификат 1">
+                    <div class="cert-info">
+                        <h3>Сертификат I</h3>
+                        <p>Отдохни, покупайся.</p>
+                    </div>
+                </div>
+                <div class="cert-card" onclick="openModal('images/2_page_1.png')">
+                    <img src="images/2_page_1.png" alt="Сертификат 2">
+                    <div class="cert-info">
+                        <h3>Сертификат II</h3>
+                        <p>Тебя нужно помять</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>С любовью и наилучшими пожеланиями ❤️ 2026</p>
+        </footer>
+    </main>
+
+    <!-- Modal for zoom -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img id="modalImg" src="" alt="Zoomed view">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
