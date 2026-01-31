@@ -272,3 +272,43 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Terms Section */
+.cert-terms {
+    margin-top: 50px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cert-terms strong,
+.terms-title {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.terms-title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.cert-terms a {
+    color: var(--text-color);
+    text-decoration: underline;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.cert-terms a:hover {
+    opacity: 1;
+}
